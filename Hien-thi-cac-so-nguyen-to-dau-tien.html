@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hien thi cac so nguyen to</title>
+</head>
+<body>
+    <script>
+        var numbers = 20;
+        var count = 0;
+        for (var N = 2; count < numbers; N++) {
+            var prime = true;
+            for (var i = 2; i < (N - 1); i++) {
+                    if (N % i === 0) {
+                        prime = false;
+                        break;
+                    }
+                }
+            if (prime === true) {
+                document.write(N + '<br>');
+                count++;
+            }
+        }
+    </script>
+</body>
+</html>
